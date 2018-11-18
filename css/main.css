@@ -102,19 +102,114 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
   }
+/* ==========================================================================
+   Section: Featured Animals 
+   ========================================================================== */
+.main-content {
+    float: right;
+    width: 70%;
+}
+.featured-pets {
+    border: solid pink 5px;
 
 
+}
+
+.pet {
+    border: solid red 1px;
+    display: flex;
+    flex-direction: column;
+
+}
 
 
+.pet-content {
+    border: solid black 2px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    
+
+  
+
+}
+.pet-photo {
+    border: solid blue 1px;
+    flex: 1;
+    position: relative;
+    width: 100%;
+    padding: 1em;
+}
+
+.pet-photo img {
+
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  
+    
+}
+.pet-description {
+    border: solid green 4px;
+ 
+
+}
+.adopt-info {
+    border: solid grey 3px;
+    flex: 1;
 
 
-
-
-
-
-
-
-
+  
+}
+.adopt-info p {
+    margin: 0;
+}
+/* ==========================================================================
+   Section: sidebar
+   ========================================================================== */
+   
+.sidebar {
+    width: 30%;
+    border: solid black 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.sidebar img {
+    max-width: 100%;
+    position: absolute;
+    top: 1em;
+    left: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.social-media {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    border: solid yellow 2px;
+    width: 100%;
+    justify-content: center;
+}
+.main-nav {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    padding: 1em;
+}
+ul.social-media i {
+    font-size: 3em;
+}
+ul.social-media li {
+    padding: 1em;
+}
 
 
 /* ==========================================================================
