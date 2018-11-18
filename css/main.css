@@ -94,8 +94,10 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Kelsey's added styles
    ========================================================================== */
+/*******************globals*/
+
 html {
     box-sizing: border-box;
   }
@@ -118,7 +120,6 @@ ul li {
     font-size: 1.2em;
 }
 h1 {
-    text-align: center;
     background: black;
     color: white;
     padding: .7em;
@@ -133,7 +134,7 @@ h5 {
     margin: 0;
     line-height: 1;
 }
-h4 {
+h1, h4 {
     text-align: center;
 }
 a {
@@ -153,9 +154,6 @@ a:visited {
 .main-content {
     float: right;
     width: 70%;
-}
-.featured-pets {
-
 }
 .pet {
     border-bottom: dotted black 1px;
@@ -187,10 +185,8 @@ a:visited {
 .pet-description {
     padding: 1em;
     margin: 0;
-
 }
 .adopt-info {
-
     flex: 1;  
     display: flex;
     flex-direction: column;
@@ -211,41 +207,7 @@ a:visited {
     border: solid yellow 2px;
     z-index: 10;
 }
-
-/* button */
-.button {
-    background-color: hsl(303, 96%, 50%);
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    width: 6em;
-    line-height: 1;
-    font-weight: bold;
-    color: white;
-    border-radius: 1rem;
-    flex-basis: 30%;
-    border: solid black 1px;
-}
-.form {
-    flex-basis: 50%;
-    border: solid blue 1px;
-    display: none;
-}
-.button-open .form {
-    display: block;
-}
-.adopt {
-    position: relative;
-    display: flex;
-    border: solid green 1px;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.button p {
-    text-align: center;
-}
-
-
-
+/**********************************pet name button*****/
 
 
 /* ==========================================================================
@@ -285,6 +247,39 @@ ul.social-media {
 }
 ul.social-media i {
     font-size: 3rem;
+}
+/************************** adoption button */
+.button {
+    background-color: hsl(303, 96%, 50%);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    width: 6em;
+    line-height: 1;
+    font-weight: bold;
+    color: white;
+    border-radius: 1rem;
+    flex-basis: 30%;
+}
+.form {
+    flex-basis: 50%;
+    display: none;
+}
+.button-open .form {
+    display: block;
+}
+.adopt {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.button p {
+    text-align: center;
+}
+.adoption {
+    position: absolute;
+    width: 100%;
+    top: 50%;
 }
 
 /* ==========================================================================
