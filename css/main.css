@@ -102,6 +102,52 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
   }
+body {
+    font-family: arial, sans-serif;
+}
+strong {
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    
+}
+ul li {
+    text-transform: uppercase;
+    padding: 1.2em;
+    font-size: 1.2em;
+}
+h1 {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: .7em;
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: .25em;
+    font-weight: normal;
+}
+h5 {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+h4 {
+    text-align: center;
+}
+a {
+    color: black;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+a:visited {
+    text-decoration: underline;
+}
 /* ==========================================================================
    Section: Featured Animals 
    ========================================================================== */
@@ -110,67 +156,72 @@ html {
     width: 70%;
 }
 .featured-pets {
-    border: solid pink 5px;
-
-
 }
-
 .pet {
-    border: solid red 1px;
+    border-bottom: dotted black 1px;
     display: flex;
+    position: relative;
     flex-direction: column;
-
+    padding: 1em;
 }
-
-
 .pet-content {
-    border: solid black 2px;
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    
-
-  
-
+    background: black;
 }
 .pet-photo {
-    border: solid blue 1px;
-    flex: 1;
+    flex: 2;
     position: relative;
     width: 100%;
     padding: 1em;
 }
-
 .pet-photo img {
-
     width: 100%;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-  
-    
+    display: block;   
 }
 .pet-description {
-    border: solid green 4px;
- 
+    padding: 1em;
+    margin: 0;
 
 }
 .adopt-info {
-    border: solid grey 3px;
-    flex: 1;
 
+    flex: 1;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    border: dotted black 1px;
+    border-left-color: transparent;
+    padding: 0 0 1em 0;
+}
+.adopt-location {
 
-  
+}
+.adopt-history {
+
 }
 .adopt-info p {
     margin: 0;
+    text-align: center;
 }
+.photo-content {
+
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+    border: solid yellow 2px;
+}
+
+
 /* ==========================================================================
    Section: sidebar
    ========================================================================== */
-   
 .sidebar {
     width: 30%;
     border: solid black 5px;
@@ -194,7 +245,6 @@ ul.social-media {
     display: flex;
     position: absolute;
     bottom: 0;
-    border: solid yellow 2px;
     width: 100%;
     justify-content: center;
 }
@@ -205,12 +255,8 @@ ul.social-media {
     padding: 1em;
 }
 ul.social-media i {
-    font-size: 3em;
+    font-size: 3rem;
 }
-ul.social-media li {
-    padding: 1em;
-}
-
 
 /* ==========================================================================
    Helper classes
