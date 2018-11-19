@@ -211,11 +211,11 @@ a:visited {
 .pet-name {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: .75rem;
     color: hsl(171, 92%, 50%);
     display: block;
     z-index: 10;
-    font-size: 7rem;
+    font-size: 7.5rem;
     line-height: 1;
 }
 .name {
